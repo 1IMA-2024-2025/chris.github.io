@@ -27,7 +27,6 @@ body {
     align-items: center;
     background-color: rgb(15, 32, 59);
     width: 20%;
-    border: solid rgb(2, 15, 40) 10px;
 }
 
 .MainImage img {
@@ -97,6 +96,7 @@ body {
     background-color: rgb(2, 15, 40);
     overflow: hidden;
     border: none;
+    border: solid rgb(2, 15, 40) 10px;
 }
 
 .img_button button .cropper img{
