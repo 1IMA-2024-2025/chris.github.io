@@ -1,0 +1,164 @@
+body {
+    margin: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(15, 32, 59);
+    font-family: ComicSans;
+    font-size: 1.5vb;
+}
+
+.hedder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(2, 15, 40);
+    border-bottom: 10px solid rgb(1, 8, 21);
+}
+
+.box_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 32, 59);
+    width: 20%;
+    border: solid rgb(2, 15, 40) 10px;
+}
+
+.MainImage img {
+    width: 80%;
+    border: solid black 10px;
+}
+
+.MainImage {
+    background-image: url(../images/img1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 56.25vw;
+}
+
+.overlay1 {
+    display: none;
+    height: 5%;
+}
+
+.overlay2 {
+    height: 90%;
+    font-family: NothingFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.4vb;
+    text-shadow: 4px 4px 4px black;
+}
+
+.MainImageCon {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_sel {
+    display: flex;
+    height: 22%;
+}
+
+.img_button {
+    background-color: rgb(2, 15, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    aspect-ratio: 1/1;
+    /*border: 15px solid rgb(2, 15, 40);*/
+}
+
+.cropper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+}
+
+.img_button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(2, 15, 40);
+    overflow: hidden;
+    border: none;
+}
+
+.img_button button .cropper img{
+    height: 100%;
+}
+
+
+
+
+
+@font-face {
+    font-family: ComicSans;
+    src: url(fonts/Ldfcomicsans-jj7l.ttf);
+}
+
+@font-face {
+    font-family: NothingFont;
+    src: url(fonts/nothing-font.ttf);
+}
+
+@media only screen and (min-width: 100vh) {
+    .main {
+        font-size: 2vb;
+        height: 100%;
+    }
+    .hedder {
+        height: 4%;
+        border: none;
+    }
+    .padder {
+        display: none;
+    }
+    .title {
+        display: none;
+    }
+    .overlay1 {
+        display: flex;
+        background-image:  linear-gradient(rgba(2, 15, 40, 1), rgba(0, 0, 0, 0)); 
+        height: 5%;
+    }
+    .overlay2 {
+        font-size: 4vb;
+    }
+    .overlay3 {
+        display: none;
+    }
+    .MainImage {
+        width: 88%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    .MainImageCon {
+        flex-direction: row;
+    }
+    .img_sel {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 12%;
+        height: 100%;
+    }
+    .img_button {
+        width: 100%;
+        height: auto;
+    }
+}
