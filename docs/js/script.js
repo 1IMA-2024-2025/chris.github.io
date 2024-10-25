@@ -14,6 +14,7 @@ const Send  = async (id) => {
         MainImg.style.backgroundImage = text.concat(button.name, ")");
         await sleep(100);
     //}
+    
     button.disabled = false;
 }
 
