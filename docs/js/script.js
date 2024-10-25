@@ -1,11 +1,12 @@
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
-var button = document.getElementById("test");
+
 var MainImg = document.getElementById("MainImage");
 let text = "url(";
 
-const Send = async () => {
+const Send  = async (id) => {
+    var button = document.getElementById(id);
     x.disabled = true;
     //for (let i = 0; i < 3; i++) {
 
@@ -16,8 +17,8 @@ const Send = async () => {
     x.disabled = false;
 }
 
-function Click() {
-    Send();
+function Click(id) {
+    Send(id);
 }
 
     
