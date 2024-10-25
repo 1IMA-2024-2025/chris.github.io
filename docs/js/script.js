@@ -7,14 +7,14 @@ let text = "url(";
 
 const Send  = async (id) => {
     var button = document.getElementById(id);
-    x.disabled = true;
+    button.disabled = true;
     //for (let i = 0; i < 3; i++) {
 
     //    window.alert(button.type);
         MainImg.style.backgroundImage = text.concat(button.name, ")");
         await sleep(100);
     //}
-    x.disabled = false;
+    button.disabled = false;
 }
 
 function Click(id) {
