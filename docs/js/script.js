@@ -1,3 +1,4 @@
+
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 var background = document.getElementById("main")
@@ -8,8 +9,6 @@ let state = false
 function FGtick() {
     height = screen.height
     backheight = background.scrollHeight
-    console.log("screen heigh: " + height)
-    console.log("div height: " + backheight)
     if (state) {
         if (backheight < height) {
             state = false
@@ -31,3 +30,5 @@ const fixBackground  = async () => {
 }
 
 fixBackground()
+
+
