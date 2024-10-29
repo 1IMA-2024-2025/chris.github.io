@@ -5,6 +5,7 @@ const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 var MainImg = document.getElementById("MainImage");
 let text = 'url("';
 
+
 const Send  = async (id) => {
     var button = document.getElementById(id);
     button.disabled = true;
@@ -24,5 +25,8 @@ const Send  = async (id) => {
 function Click(id) {
     Send(id);
 }
+
+
+Send('button1')
 
     
