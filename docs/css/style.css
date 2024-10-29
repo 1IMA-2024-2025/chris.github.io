@@ -1,6 +1,12 @@
+body {
+    margin: 0px;
+}
 
-
-
+.main {
+    display: flex;
+    height: 100vh;
+    background-color: orangered;
+}
 
 @font-face {
     font-family: ComicSans;
