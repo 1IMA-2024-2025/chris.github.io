@@ -1,6 +1,11 @@
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
+var icon = document.getElementById("icon");
+var nameTag = document.getElementById("name")
+
+const userTag = nameTag.innerHTML;
+
 var background = document.getElementById("main")
 let height = screen.height
 let backheight = background.scrollHeight
@@ -23,11 +28,17 @@ function FGtick() {
 }
 
 const fixBackground  = async () => {
+
+    const data = await axios('https://api.github.com/users/' + userTag);
+    icon.src = (data.data.avatar_url);
+
     while (true) {
         FGtick()
         await sleep(100)
     }
 }
+
+
 
 fixBackground()
 

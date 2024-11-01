@@ -5,7 +5,29 @@ body {
 .main {
     display: flex;
     height: 100vh;
-    background-color: orangered;
+    background-color: rgb(30, 26, 36);
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    border: solid rgb(20, 18, 24) 5px;
+    margin: 30px;
+    width: 30%;
+    height: 20%;
+    background-color: rgb(53, 46, 63);
+    color: rgb(20, 18, 24);
+    font-family: ComicSans;
+    font-size: 130%;
+}
+
+.profile img {
+    height: 70%;
+    border: 5px solid rgb(30, 26, 36);
+    background-color: rgb(53, 46, 63);
+    border-radius: 20px;
 }
 
 @font-face {
