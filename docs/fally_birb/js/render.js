@@ -43,8 +43,8 @@ function stampBackground() {
 
     let backWidth = screenHeight*getAsp(backgroundImg);
 
-    for (let i = 0; i < Math.ceil(screenWidth/backWidth)+1; i++) {
-        stampImage(backgroundImg, backWidth/2 + backWidth*i + backgroundX % backWidth, screenHeight/2, backWidth, screenHeight);
+    for (let i = 0; i < Math.ceil(screenWidth/(backWidth-1))+1; i++) {
+        stampImage(backgroundImg, backWidth/2 + (backWidth-1)*i + backgroundX % backWidth, screenHeight/2, backWidth, screenHeight);
     }
 }
 
@@ -65,10 +65,10 @@ function stampPipe(size, x, length, rotation) {
     let amount = Math.ceil((screenHeight*length/100)/size);
 
     if (rotation) {
-        amount = Math.ceil((screenHeight*(100-length)/100)/size);
+        amount = Math.ceil((screenHeight*(100-length)/100)/(size-1));
         for (let i = 0; i < amount; i++) {
 
-            dy = screenHeight*length/100 + size/2 + i*size
+            dy = screenHeight*length/100 + size/2 + i*(size-1)
 
             stampImage(pipe1Img, dx, dy, size*getAsp(pipe1Img), size);
 
@@ -80,7 +80,7 @@ function stampPipe(size, x, length, rotation) {
     } else {
         for (let i = 0; i < amount; i++) {
 
-            dy = screenHeight*length/100 - size/2 - i*size
+            dy = screenHeight*length/100 - size/2 - i*(size-1)
 
             stampImage(pipe1Img, dx, dy, size*getAsp(pipe1Img), size);
 
