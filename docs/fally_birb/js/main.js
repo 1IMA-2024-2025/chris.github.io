@@ -124,7 +124,8 @@ function stampImage(img, x, y, width, height, rotate = 0, cx = 0, cy = 0) {
 }
 
 const gameLoop = async () => {
-    await sleep(50);
+    await sleep(10);
+    updateAsp(lockAsp);
     while (true) {
         d = new Date();
         currentTime = d.getTime();
@@ -153,10 +154,6 @@ const gameLoop = async () => {
         await sleep(1);
     }
 }
-
-gameLoop();
-
-
 
 /*
 c.height = main.clientHeight;

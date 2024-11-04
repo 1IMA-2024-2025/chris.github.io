@@ -39,7 +39,6 @@ const fixBackground  = async () => {
 }
 
 
-
-fixBackground()
+fixBackground();
 
 

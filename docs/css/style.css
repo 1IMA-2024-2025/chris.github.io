@@ -4,8 +4,19 @@ body {
 
 .main {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: rgb(30, 26, 36);
+    overflow-x: hidden;
+}
+
+.main hr {
+    border-color: rgb(53, 46, 63);
+    border-width: 3px;
+    border-style: solid;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .profile {

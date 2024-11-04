@@ -120,4 +120,6 @@ function renderMain() {
     stampAsp();
 }
 
-updateAsp(lockAsp);
+backgroundImg.onload = () => {
+    gameLoop();
+}
