@@ -30,9 +30,9 @@ function FGtick() {
 
 function gotoWeb(link) {
     let tmp = window.location.href;
-    tmp = tmp.replace("/index.html", "");
-    console.log(tmp + "/" + link + "/index.html")
-    window.open(tmp + "/" + link + "/index.html", "_self");
+    tmp = tmp.replace("/index.html", "/");
+    console.log(tmp + link + "/index.html")
+    window.open(tmp + link + "/index.html", "_self");
 }
 
 const fixBackground  = async () => {
