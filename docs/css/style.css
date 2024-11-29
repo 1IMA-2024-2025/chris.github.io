@@ -8,11 +8,14 @@ body {
     height: 100vh;
     background-color: rgb(30, 26, 36);
     overflow-x: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .main hr {
     border-color: rgb(53, 46, 63);
-    border-width: 3px;
+    border-width: 0.5vh;
     border-style: solid;
     width: 100%;
     margin: 0px;
@@ -21,27 +24,76 @@ body {
 
 .profile {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    border-radius: 50px;
-    border: solid rgb(20, 18, 24) 5px;
-    margin: 30px;
-    width: 30%;
+    border-radius: 6vh;
+    border: solid rgb(20, 18, 24) 0.7vh;
+    margin: 4vh;
+    padding-right: 5vh;
+    width: fit-content;
     height: 20%;
     background-color: rgb(53, 46, 63);
     color: rgb(20, 18, 24);
     font-family: ComicSans;
-    font-size: 130%;
+    font-size: 3vb;
 }
 
+
+
 .profile img {
+    margin-left: 3%;
+    margin-right: 3%;
     height: 70%;
-    border: 5px solid rgb(30, 26, 36);
+    border: 0.7vh solid rgb(20, 18, 24);
+    background-color: rgb(43, 38, 52);
+    border-radius: 3vh;
+    pointer-events: none;
+}
+
+.project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 6vh;
+    border: solid rgb(20, 18, 24) 0.7vh;
+    margin: 4vh;
+    width: fit-content;
+    height: 20%;
     background-color: rgb(53, 46, 63);
-    border-radius: 20px;
+    color: rgb(20, 18, 24);
+
+}
+
+.project img {
+    height: 60%;
+    pointer-events: none;
+}
+
+.project button {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    font-family: ComicSans;
+    font-size: 2vb;
+    
 }
 
 @font-face {
     font-family: ComicSans;
     src: url(fonts/Ldfcomicsans-jj7l.ttf);
+}
+
+@media only screen and (max-width: 75vh) {
+    .profile {
+        height: 30%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+        padding-top: 5%;
+    }
+    .profile img {
+        height: 50%;
+        margin: 0px;
+    }
 }
