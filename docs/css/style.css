@@ -55,8 +55,8 @@ body {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     height: 69%;
-
 }
 
 .project {
@@ -71,7 +71,7 @@ body {
     background-color: rgb(53, 46, 63);
     color: rgb(20, 18, 24);
     margin-right: 0px;
-
+    margin-bottom: 0px;
 }
 
 .project img {
