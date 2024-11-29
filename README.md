@@ -6,10 +6,8 @@ EE
 EEEEEE
 E
 
-```
-gawgawgawgawg
-gawggaw
-gawgawaw
-
-gawg
+```lua
+local function E()
+    print("E")
+end
 ```
