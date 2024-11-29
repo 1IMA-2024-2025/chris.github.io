@@ -114,6 +114,7 @@ function stampImage(img, x, y, width, height, rotate = 0, cx = 0, cy = 0) {
     
     rotate = rotate*Math.PI/180;
     ctx.save();
+    ctx.imageSmoothingEnabled = false;
     ctx.translate(x, y);
     ctx.translate(cx, cy);
     ctx.rotate(rotate);
