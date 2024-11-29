@@ -13,19 +13,7 @@ let backheight = background.scrollHeight;
 let state = false;
 
 function FGtick() {
-    height = screen.height;
-    backheight = background.scrollHeight;
-    if (state) {
-        if (backheight < height) {
-            state = false;
-            background.style.height = "100vh";
-        }
-    } else {
-        if (backheight > height+10) {
-            state = true;
-            background.style.height = "100%";
-        }
-    }
+    background.style.height = document.height + "px"
 }
 
 function gotoWeb(link) {
