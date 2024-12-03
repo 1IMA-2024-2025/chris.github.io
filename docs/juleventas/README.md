@@ -6,3 +6,7 @@
 
 I dag har vi begynt på JuleEvent prosjektet. Vi skal starte med  å se for oss hva vi skal lage, og tegne litt skisser.
 
+### Tirsdag 3 December 2024
+
+i dag har jeg laget skisse. og gjort research på hvordan man styler scrollbar.
+![SVG Image](documents/skise.svg)
