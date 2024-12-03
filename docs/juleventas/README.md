@@ -10,4 +10,4 @@ I dag har vi begynt på JuleEvent prosjektet. Vi skal starte med  å se for oss 
 
 i dag har jeg laget skisse. og gjort research på hvordan man styler scrollbar.
 
-![SVG Image](documents/skise.svg)
+![SVG image](documents/skise.svg)
