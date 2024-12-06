@@ -13,19 +13,26 @@ let backheight = background.scrollHeight;
 let state = false;
 
 function FGtick() {
-    background.style.height = document.height + "px"
+    background.style.height = document.height + "px";
 }
 
-function gotoWeb(link) {
-    let tmp = window.location.href;
-    if (tmp.includes("/index.html")) {
-        tmp = tmp.replace("/index.html", "/");
-        tmp = tmp + link + "/index.html"
+function gotoWeb(link, local) {
+
+    let tmp;
+
+    if (local) {
+        tmp = window.location.href;
+        if (tmp.includes("/index.html")) {
+            tmp = tmp.replace("/index.html", "/");
+            tmp = tmp + link + "/index.html";
+        } else {
+            tmp = tmp + link;
+        }
     } else {
-        tmp = tmp + link
+        tmp = "https://" + link;
     }
 
-    console.log(tmp)
+    console.log(tmp);
     window.open(tmp, "_self");
 }
 
